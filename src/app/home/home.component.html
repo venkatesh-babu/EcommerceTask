@@ -1,0 +1,28 @@
+<div class="display-msg">
+  <div *ngIf="visible" class="popup" id="popup">
+    <div (click)="close()">X</div>
+    <p>Item added successfuly...!</p>
+  </div>
+</div>
+<mat-card class="display">
+  <div class="display-header">
+    <div class="display-header-content">
+      <h1>Deals of the Day</h1>
+      <p> </p>
+    </div>
+    <button mat-raised-button color="primary" class="view">VIEW ALL</button>
+  </div>
+  <hr>
+  <div class="display-content" id="display-data">
+    <div *ngFor="let product of products" class="item" id={{product.id}}>
+      <img src={{product.image}} alt="logo" class="item-img">
+      <p id="name" class="product-title">{{product.title}}</p>
+      <p class="ash">{{product.category}}</p>
+      <p class="green">₹{{product.price}}</p>
+      <div>
+        <button class="button-cart" (click)="MoveToCart(product)">ADD TO CART</button>
+      </div>
+    </div>
+  </div>
+
+</mat-card>

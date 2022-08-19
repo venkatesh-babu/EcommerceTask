@@ -1,0 +1,36 @@
+<div class="display-msg">
+    <div *ngIf="visible" class="popup" id="popup">
+        <div (click)="close()" class="close">X</div>
+        <div class="popup-content">
+            <p>Your product will reach you soon</p>
+            <button routerLink="" class="button-back">BACK TO PURCHASE</button>
+        </div>
+    </div>
+</div>
+<section class="checkout-details">
+    <div class="pricedisplay">
+        <table>
+            <tr *ngFor="let item of product">
+                <td>{{item.title}}</td>
+                <td> : ₹{{item.price}}</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>Grand Total</td>
+                <td> : ₹{{grandtotal}}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="payment">
+        <div>
+            <p>Available payment method</p>
+            <input type="radio" value="cash" checked=true><label class='cash-option' for="cash">cash on delivery</label>
+            <input type="radio" value="upi" disabled><label for="cash">UPI</label>
+        </div>
+        <button class="button-order" (click)="show()">PLACE ORDER</button>
+    </div>
+</section>

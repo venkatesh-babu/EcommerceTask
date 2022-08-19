@@ -1,0 +1,141 @@
+.display {
+    margin: 10px;
+    background-color: white;
+    color: black;
+    padding: 0;
+    box-shadow: none;
+}
+
+.display-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 23px;
+    align-items: center;
+}
+
+.display-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    flex-wrap: wrap;
+}
+
+.view {
+    background-color: #2874f0;
+    color: white;
+    border: 0;
+    height: fit-content;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.item {
+    width: 20%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+}
+
+.item-img {
+    margin-bottom: 22px;
+    width: 50%;
+    height: 50%;
+}
+
+.product-title {
+    text-align: center;
+}
+
+.item:hover .item-img {
+    transform: scale(1.05);
+}
+
+.green {
+    color: #388e3c;
+}
+
+.ash {
+    color: #21212178;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+.button-cart {
+    padding: 13px 10px;
+    background-color: #ff7043;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.button-buy {
+    padding: 13px 10px;
+    background-color: #7cb342;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.button-cart:hover {
+    background-color: #f4511e;
+}
+
+.button-buy:hover {
+    background-color: #689f38;
+}
+
+.display-msg {
+    position: relative;
+    width: 100%;
+}
+
+.popup {
+    text-align: center;
+    position: absolute;
+    top: 45px;
+    z-index: 60;
+    margin-bottom: 0;
+    position: fixed;
+    padding: 12px;
+    box-shadow: 0px 1px 0px -1px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+    background-color: white;
+    border-radius: 12px;
+    right: 160px;
+}
+
+.popup div {
+    text-align: end;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.popup p {
+    text-shadow: 2px 2px 8px #ff000096;
+    font-size: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

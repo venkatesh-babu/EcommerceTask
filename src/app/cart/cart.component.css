@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.product {
+  display: flex;
+  padding: 24px 24px 30px 24px;
+  flex-flow: row;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #00000045;
+}
+
+.product-about {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 18px;
+}
+
+.product-image img {
+  width: 93px;
+  height: 200px;
+  margin: 0 54px;
+}
+
+.product-details {
+  width: 55%;
+}
+
+.product-offers {
+  padding: 0 0 0 25px;
+  width: 38%;
+}
+
+.product-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 500;
+}
+
+.rat {
+  border: 1px solid transparent;
+  background-color: #388e3c;
+  color: white;
+  font-size: 12px;
+  padding: 2px 4px 2px 6px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+.features {
+  padding-left: 14px;
+}
+
+.features li {
+  list-style-type: none;
+}
+
+.features li::before {
+  content: "\2022";
+  color: #c2c2c2;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.rupees {
+  font-size: 25px;
+}
+
+.rupees label {
+  padding-right: 33px;
+}
+
+.rupees img {
+  width: 77px;
+  height: 21px;
+}
+
+.off {
+  font-size: 13px;
+  color: #388e3c;
+  padding: 5px 0 0 0;
+  font-weight: 500;
+  margin: 0;
+}
+
+.exchange {
+  font-size: 14px;
+  padding: 5px 0 0 0;
+}
+
+.product:hover .product-title {
+  color: #2874f0;
+}
+
+.button-buy {
+  background-color: #7cb342;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin-top: 30px;
+  margin-right: 12px;
+}
+
+.button-buy:hover {
+  background-color: #689f38;
+}
+
+.fotter {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 67%;
+  margin-top: 2%;
+}
+
+.fotter p {
+  margin-right: 12px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.button-checkout {
+  background-color: #7cb342;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin-right: 40px;
+}
+
+.button-checkout:hover {
+  background-color: #689f38;
+}
+
+.emptycart {
+  text-align: center;
+}
+
+.emptycart p {
+  font-size: 30px;
+}

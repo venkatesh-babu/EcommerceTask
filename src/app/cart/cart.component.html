@@ -1,0 +1,42 @@
+<section *ngIf="product.length == 0" class="emptycart">
+  <img src="../../assets/images/emptycart.png" alt="logo">
+  <p>Your cart is empty....</p>
+</section>
+
+<section *ngIf="product.length != 0">
+  <div *ngFor="let item of product">
+    <section class="product">
+      <div class="product-image">
+        <img src={{item.image}}>
+      </div>
+      <div class="product-about">
+        <div class="product-details">
+          <h3 class="product-title">{{item.title}}</h3>
+          <p><span class="rat">{{item.rating.rate}}</span></p>
+          <ul class="features">
+            <li>{{item.description}}</li>
+            <li>{{item.category}}</li>
+            <li><select id="mySelect{{item.id}}" (change)="increment(item, $event)">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select></li>
+            <button class="button-buy" (click)="deleteItem(item)">REMOVE</button>
+          </ul>
+        </div>
+        <div class="product-offers">
+          <div class="rupees">
+            <label>₹{{item.price}}</label>
+            <img src='../../assets/images/assured.png'>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="fotter">
+    <button routerLink="checkout" class="button-checkout">CHECKOUT</button>
+    <p>Grand Total : </p>
+    <p id="total">₹{{grandtotal}}</p>
+  </div>
+</section>
